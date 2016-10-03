@@ -1,0 +1,153 @@
+nav{
+	text-align: right;
+	padding: 0;
+	margin-top:-6%;
+}
+
+nav ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-right: 5%;
+}
+
+nav li{
+	display: inline-block;
+}
+
+nav a{
+	font-family: 'Poppins', sans-serif;
+	font-size: 9pt;
+	padding: 15px 10px;
+	text-transform: uppercase;
+/*	color: rgb(179,179,179);
+*/	letter-spacing: 1px;
+	font-weight: 600;
+	color:black;
+	text-decoration: none;
+}
+
+nav a.selected{
+	color: skyblue;
+}
+
+header a{
+	text-decoration: none;
+}
+
+#logo {
+	display: inline-block;
+	width: 30%;
+	line-height: 80px;
+	vertical-align: middle;
+	font-size: 35px;
+	color: black;
+	font-family: "Poppins", sans-serif;
+}
+
+#about-page {
+	font-family: "Poppins", sans-serif;
+	font-size:30px;
+	color: darkgrey;
+	text-align: center;
+	margin-top: 10%;
+	margin-bottom:0;
+}
+
+h2{
+	font-family: "Poppins", sans-serif;
+	font-size: 15px;
+	color: darkgrey;
+	text-align: center;
+	margin: 0 auto;
+	line-height: 40px;
+	font-style: italic;
+	margin-bottom: 2%;
+}
+
+p{
+	font-family: "Poppins", sans-serif;
+	font-size: 15px;
+	color: grey;
+	text-align: center;
+	width: 60%;
+	margin: 0 auto;
+	line-height: 40px;
+}
+
+#background{
+	background: linear-gradient(black,rgb(8,38,44),rgb(17,24,32),rgb(2,42,58), rgb(0,42,80), rgb(0,65,152), rgb(255,80,0));
+	height:7000px;
+	margin-top: 50%;
+	margin-right: 0;
+}
+
+#lightning{
+	position: absolute;
+	width:100%;
+	top: 20vh;
+	left: 0vw;
+	z-index: 0;
+}
+
+#lightning:hover{
+	transform: scale(50) rotate(15deg);
+}
+
+#rain{
+	position: absolute;
+	width:100%;
+	top: 300vh;
+	left: 0;
+	z-index: 0;
+}
+
+#rain:hover{
+	transform: scale(50) rotate(15deg);
+}
+
+#sun{
+	position: absolute;
+	width:100%;
+	top: 900vh;
+	left: 0;
+	z-index: 0;
+}
+
+#sun:hover{
+	transform: scale(50) rotate(15deg);
+}
+
+#cloud{
+	width: 400px;
+	height: 300px;
+	animation: moveLeft 5s infinite alternate ease-in-out;
+	top:100px;
+	margin-left: 15%;
+}
+
+#cloud-2{
+	width: 500px;
+	height: 400px;
+	animation: moveRight 5s infinite alternate ease-in-out;
+	top:100px;
+	
+}
+
+@keyframes moveLeft{
+	0%{
+		transform: translate(0,0);
+	}
+	50%{
+		transform: translate(-200px, 0);
+	}
+}
+
+@keyframes moveRight{
+	0%{
+		transform: translate(0,0);
+	}
+	50%{
+		transform: translate(100px, 0);
+	}
+}
